@@ -35,6 +35,11 @@ select = ["E", "F", "I", "UP"]
 asyncio_mode = "auto"
 testpaths = ["tests"]
 
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+]
+
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
