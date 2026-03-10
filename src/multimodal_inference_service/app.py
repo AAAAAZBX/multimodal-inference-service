@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket
 from pydantic import BaseModel
 
 app = FastAPI()
@@ -28,3 +28,11 @@ async def get_item(item_id: int) -> dict[str, int]:
 @app.get("/search")
 async def search(q: str) -> dict[str, str]:
     return {"query": q}
+
+@app.websocket("/ws")
+async def websocket_echo(websocket: WebSocket) -> None:
+    await websocket.accept()
+    while True:
+        message = await websocket.receive_text()
+        await websocket.send_text(f"echo: {message}")
+
