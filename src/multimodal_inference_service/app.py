@@ -19,3 +19,12 @@ class Item(BaseModel):
 async def echo(item: Item):
     item.text += ", content Modified!"
     return item
+
+@app.get("/items/{item_id}")
+async def get_item(item_id: int) -> dict[str, int]:
+    return {"item_id": item_id}
+
+
+@app.get("/search")
+async def search(q: str) -> dict[str, str]:
+    return {"query": q}
