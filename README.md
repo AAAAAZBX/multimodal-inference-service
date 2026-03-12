@@ -1,13 +1,6 @@
 # multimodal-inference-service
 
-<img src="https://img.shields.io/badge/Python-3568A3?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
-<img src="https://img.shields.io/badge/uv-Package_Manager-FF9F4B?style=for-the-badge" alt="uv"/>
-<img src="https://img.shields.io/badge/Uvicorn-5A4EE4?style=for-the-badge&logo=uvicorn&logoColor=white" alt="Uvicorn"/>
-<img src="https://img.shields.io/badge/Ruff-EE4C2C?style=for-the-badge&logo=ruff&logoColor=white" alt="Ruff"/>
-<img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+<img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" alt="FastAPI"/> <img src="https://img.shields.io/badge/uv-FF9F4B?logo=uv&logoColor=white" alt="uv"/> <img src="https://img.shields.io/badge/Uvicorn-5A4EE4?logo=uvicorn&logoColor=white" alt="Uvicorn"/> <img src="https://img.shields.io/badge/Ruff-EE4C2C?logo=ruff&logoColor=white" alt="Ruff"/> <img src="https://img.shields.io/badge/Pytest-0A9EDC?logo=pytest&logoColor=white" alt="Pytest"/> <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker"/> <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black" alt="Hugging Face"/>
 
 基于 **FastAPI** 的异步多模态推理服务：提供 **文生图（T2I）** 与 **图片理解（VLM）** 两种模式，单实例二选一，通过环境变量切换。使用 **uv** 管理依赖与锁定版本，代码带类型标注并用 **Ruff** 格式化与检查，支持 **Docker** 打包为可部署镜像。
 
